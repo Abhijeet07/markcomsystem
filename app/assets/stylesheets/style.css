@@ -174,6 +174,7 @@ ol{
   position: relative;
   background: url("1.jpg") no-repeat;
   background-size: cover;
+  margin-bottom: 5%;
 }
 
 #intro .intro-content {
@@ -534,7 +535,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* About Section
 --------------------------------*/
-#about {
+/*#about {
   padding: 60px 0 30px 0;
 }
 
@@ -598,9 +599,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #07277b;
   /*font-weight: 700;
   font-size: 36px;*/
-  /*font-family: "Raleway", sans-serif;*/
+  /*font-family: "Raleway", sans-serif;
   font-family: "Montserrat", sans-serif;
-}
+}*/
 
 /* Services Section
 --------------------------------*/
@@ -906,48 +907,43 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*New Added*/
-
-/*about Section*/
 .main_about{
-  display: flex;
-  font-family:  "Open Sans", sans-serif;
+      display: contents;
+}
+.main_about img{
+  max-width: 100%;
 }
 .about_item{}
 .about_item h2{
     font-size:26px;
     font-weight: 800;
 }
-#about_width{
-  width: 550px;
-  margin: 0px;
-  /*margin-right: 100px;*/
-}
 .about_item li{
-    font-size:20px;
+    font-size:18px;
     font-weight: 300;
     line-height: 2rem;
 }
 .about_item li i{
-    font-size:18px;
-   
+    font-size:12px;
+    margin-right: 5px;
 
 }
 .about_item p{
     color:#333333;
     line-height: 2rem;
-    font-size:16px;
+    font-size:14px;
     font-weight: 500;
 }
-/*.about_item .about_btn{
+.about_item .about_btn{
     margin-left:-10px;
 }
 .about_item .about_btn a{
     margin-left:10px;
 }
 .about_item .about_btn .btn-default{
-    color:#2b2525444;
+    color:#444444;
 }
-*/
+
 
 .slid_shap{
     height: 40px;
@@ -964,7 +960,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin: 0;
 }
 
-/*.about_slid .slick-arrow{
+.about_slid .slick-arrow{
     position: absolute;
     top:29%;
     z-index: 1;
@@ -976,22 +972,22 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size:20px;
     transition: all 0.6s;
     color:#fff;
-}*/
-/*.about_slid .nextprevleft{
+}
+.about_slid .nextprevleft{
     left:5.9%;
 }
 .about_slid .nextprevright{
     right:6%;
-}*/
-/*.about_slid .nextprevleft:hover,
+}
+.about_slid .nextprevleft:hover,
 .about_slid .nextprevright:hover{
-        width:25px;
+    /*    width:25px;
         height: 25px;
-        line-height: 25px;
-    /*text-align: center;//close
+        line-height: 25px;*/
+    /*text-align: center;*/
     background-color: #ddd;
     border-radius: 50%;
-}*/
+}
 
 .about_slid .slick-dots {
     position: absolute;
@@ -1003,16 +999,3 @@ body.mobile-nav-active #mobile-nav-toggle {
     list-style: none;
     text-align: left;
 }
-
-#about .container{
-  margin-top: 100px;
-}
-
-#about-width{
-  width: 550px;
-  margin-right: 100px;
-}
-
-/*AIzaSyCXHZYNiVKCrYI-yk7ti0tz08vLpriq1_c
-*/
-
