@@ -16,7 +16,7 @@ Rails.application.configure do
 
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
   # or in config/master.key. This key is used to decrypt credentials (and other encrypted files).
-  # config.require_master_key = true
+   config.require_master_key = true
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
@@ -40,7 +40,7 @@ Rails.application.configure do
 
   # Store uploaded files on the local file system (see config/storage.yml for options)
   config.active_storage.service = :local
-
+  
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil
   # config.action_cable.url = 'wss://example.com/cable'
@@ -99,8 +99,10 @@ Rails.application.configure do
     address:              'smtp.gmail.com',
     port:                 587,
     domain:               'localhost:3000',
-    user_name:            Rails.application.credentials.production[:stmp_key][:gmail_id],
-    password:             Rails.application.credentials.production[:smtp_key][:gmail_key],
+    # user_name:            Rails.application.credentials.production[:stmp_key][:gmail_id],
+    # password:             Rails.application.credentials.production[:smtp_key][:gmail_key],
+    user_name:            Rails.application.credentials.stmp_key[:gmail_id],
+    password:             Rails.application.credentials.stmp_key[:gmail_key],
     authentication:       'plain',
     enable_starttls_auto: true 
   }
